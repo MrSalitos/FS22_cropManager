@@ -1,4 +1,4 @@
--- Fruchtfolge-Tabelle
+-- Einordnung der Feldfrüchte in Familien
 local fruchtfolge = {
   { name = "Getreide", fruchtarten = { "Weizen", "Gerste", "Hafer", "Roggen", "Triticale", "Hirse", "Sonnenblumen", "Sojabohnen", "Mais", "Zuckerrohr" } },
   { name = "Wurzelfrüchte", fruchtarten = { "Kartoffeln", "Zuckerrüben" } },
@@ -6,6 +6,32 @@ local fruchtfolge = {
   { name = "Gemüse", fruchtarten = { "Zwiebeln", "Karotten" } },
   { name = "Obst", fruchtarten = { "Trauben", "Oliven" } },
   { name = "Sonstige", fruchtarten = { "Raps", "Pappel", "Ölrettich", "Sorghum" } }
+}
+	
+-- Einordnung der Feldfrüchte nach Nährstoffbedarf (Vereinfacht)
+local frucht_kategorien = {
+  Weizen = "Starkzehrer",
+  Gerste = "Mittelzehrer",
+  Hafer = "Schwachzehrer",
+  Roggen = "Mittelzehrer",
+  Triticale = "Mittelzehrer",
+  Hirse = "Schwachzehrer",
+  Sonnenblumen = "Mittelzehrer",
+  Sojabohnen = "Mittelzehrer",
+  Mais = "Starkzehrer",
+  Zuckerrohr = "Starkzehrer",
+  Kartoffeln = "Starkzehrer",
+  Zuckerrüben = "Starkzehrer",
+  Gras = "Mittelzehrer",
+  Klee = "Schwachzehrer",
+  Zwiebeln = "Mittelzehrer",
+  Karotten = "Schwachzehrer",
+  Trauben = "Schwachzehrer",  -- Nährstoffbedarf variiert je nach Sorte
+  Oliven = "Schwachzehrer",  -- Nährstoffbedarf variiert je nach Sorte
+  Raps = "Starkzehrer",
+  Pappel = "Schwachzehrer",
+  Ölrettich = "Mittelzehrer",
+  Sorghum = "Mittelzehrer"
 }
 
 -- Tabelle, die die vorhandenen Felder mit Namen, ihrer Größe und die jeweils aktuelle, letzte und nächste Frucht enthält
