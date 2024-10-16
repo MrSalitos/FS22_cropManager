@@ -37,19 +37,4 @@
     <crop name="sorghum" category="mediumFeeder" family="cereals" />
   </crops>
 
-  <rules>
-    <rule from="heavyFeeder">
-      <to>lightFeeder</to>
-      <to>mediumFeeder</to>
-    </rule>
-    <rule from="mediumFeeder">
-      <to>heavyFeeder</to>
-      <to>mediumFeeder</to>
-      <to>lightFeeder</to>
-    </rule>
-    <rule from="lightFeeder">
-      <to>heavyFeeder</to>
-    </rule>
-  </rules>
-
 </fruchtfolge>
