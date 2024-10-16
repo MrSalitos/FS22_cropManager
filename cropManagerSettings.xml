@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cropRotation>
-  <fields>
+  <ownedFields>
     <field name="field1" size="1.2" crop="wheat" lastCrop1="barley" lastCrop2="wheat" />
     <field name="field2" size="2.3" crop="barley" lastCrop1="canola" lastCrop2="barley" />
     <field name="field3" size="0.8" crop="canola" lastCrop1="wheat" lastCrop2="barley" />
@@ -10,7 +10,7 @@
     <field name="field7" size="2.0" crop="wheat" lastCrop1="barley" lastCrop2="wheat" />
     <field name="field8" size="1.6" crop="barley" lastCrop1="canola" lastCrop2="barley" />
     <field name="field9" size="1.4" crop="canola" lastCrop1="wheat" lastCrop2="barley" />
-  </fields>
+  </ownedFields>
 
   <crops>
     <crop name="wheat" category="heavyFeeder" family="cereals" />
