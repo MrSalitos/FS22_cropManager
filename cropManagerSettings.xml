@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cropRotation>
+  <fields>
+    <field name="field1" size="1.2" crop="wheat" lastCrop1="barley" lastCrop2="wheat" />
+    <field name="field2" size="2.3" crop="barley" lastCrop1="canola" lastCrop2="barley" />
+    <field name="field3" size="0.8" crop="canola" lastCrop1="wheat" lastCrop2="barley" />
+    <field name="field4" size="4.2" crop="wheat" lastCrop1="barley" lastCrop2="wheat" />
+    <field name="field5" size="3.4" crop="barley" lastCrop1="canola" lastCrop2="barley" />
+    <field name="field6" size="1.8" crop="canola" lastCrop1="wheat" lastCrop2="barley" />
+    <field name="field7" size="2.0" crop="wheat" lastCrop1="barley" lastCrop2="wheat" />
+    <field name="field8" size="1.6" crop="barley" lastCrop1="canola" lastCrop2="barley" />
+    <field name="field9" size="1.4" crop="canola" lastCrop1="wheat" lastCrop2="barley" />
+  </fields>
+
+  <crops>
+    <crop name="wheat" category="heavyFeeder" family="cereals" />
+    <crop name="barley" category="mediumFeeder" family="cereals" />
+    <crop name="oats" category="lightFeeder" family="cereals" />
+    <crop name="rye" category="mediumFeeder" family="cereals" />
+    <crop name="triticale" category="mediumFeeder" family="cereals" />
+    <crop name="millet" category="lightFeeder" family="cereals" />
+    <crop name="sunflower" category="mediumFeeder" family="oilseeds" />
+    <crop name="soybean" category="mediumFeeder" family="legumes" />
+    <crop name="corn" category="heavyFeeder" family="cereals" />
+    <crop name="sugarcane" category="heavyFeeder" family="sugarcane" />
+    <crop name="potato" category="heavyFeeder" family="tubers" />
+    <crop name="sugarbeet" category="heavyFeeder" family="sugarBeet" />
+    <crop name="grass" category="mediumFeeder" family="grass" />
+    <crop name="clover" category="lightFeeder" family="legumes" />
+    <crop name="onion" category="mediumFeeder" family="vegetables" />
+    <crop name="carrot" category="lightFeeder" family="vegetables" />
+    <crop name="grape" category="lightFeeder" family="fruits" />
+    <crop name="olive" category="lightFeeder" family="fruits" />
+    <crop name="poplar" category="lightFeeder" family="poplar" />
+    <crop name="rapeseed" category="heavyFeeder" family="oilseeds" />
+    <crop name="oilRadish" category="mediumFeeder" family="oilseeds" />
+    <crop name="sorghum" category="mediumFeeder" family="cereals" />
+  </crops>
+
+  <rules>
+    <rule from="heavyFeeder">
+      <to>lightFeeder</to>
+      <to>mediumFeeder</to>
+    </rule>
+    <rule from="mediumFeeder">
+      <to>heavyFeeder</to>
+      <to>mediumFeeder</to>
+      <to>lightFeeder</to>
+    </rule>
+    <rule from="lightFeeder">
+      <to>heavyFeeder</to>
+    </rule>
+  </rules>
+
+</fruchtfolge>
